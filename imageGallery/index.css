@@ -1,0 +1,72 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #191919;
+}
+.gallery {
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  float: none;
+}
+.gallery div img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+ 
+  transition: transform 0.35s;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+.gallery div img:hover {
+  
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 0 15px;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    width: 300px;
+  }
+  .gallery div img {
+    width: 300px;
+    height: 400px;
+  }
+}
