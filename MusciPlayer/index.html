@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="img3.jpg" class="song-img" />
+        <h1>Song1</h1>
+        <p>Mohammad Ali Haidari</p>
+
+        <audio id="song">
+          <source src="song1.mp3" type="audio/mp3" class="" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls" >
+          <div>
+            <i class="fa-solid fa-backward"></i>
+          </div>
+          <div onclick="playpuse()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a86187c7e3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
